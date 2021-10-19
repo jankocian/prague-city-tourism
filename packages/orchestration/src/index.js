@@ -1,6 +1,8 @@
 const download = require(`@app/downloader`)
 const webflowPlugin = require(`@app/webflow-plugin`)
 
+console.log(process.env)
+
 // Exit if environment variables are missing
 let siteUrl = process.env.WEBFLOW_URL
 let destinationOrigin = process.env.URL || process.env.VERCEL_URL || process.env.DEPLOY_URL
