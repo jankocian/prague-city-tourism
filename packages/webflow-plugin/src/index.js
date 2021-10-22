@@ -12,9 +12,6 @@ const inlineCriticalCss = require(`netlify-plugin-inline-critical-css`).onPostBu
 const imageOptim = require(`netlify-plugin-image-optim`).onPostBuild
 
 webp.grant_permission()
-
-console.log(JSON.stringify(process.env))
-
 let origin = process.env.WEBFLOW_URL
 if(origin[origin.length - 1] !== `/`) {
 	origin += `/`
